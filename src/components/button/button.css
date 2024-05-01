@@ -1,0 +1,33 @@
+.button {
+  font-size: large;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--button-color);
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+
+@media (width < 520px) {
+  .button {
+    font-size: medium;
+  }
+}
+
+.delete-button {
+  background-color: var(--delete-button-back);
+  filter: brightness(0.8);
+}
+
+.button:hover {
+  filter: brightness(1.3);
+  color: goldenrod;
+}
+
+.disabled,
+.disabled:hover {
+  cursor: auto;
+  filter: brightness(0.5);
+  color: var(--button-color);
+}

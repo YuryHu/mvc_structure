@@ -1,0 +1,37 @@
+.searchable-list {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height) - var(--footer-height) - 2rem);
+}
+
+.searchable-list-item {
+  cursor: pointer;
+}
+
+.searchable-list-item:hover {
+  color: blueviolet;
+}
+
+.item-list {
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 1rem;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.list-header {
+  text-align: center;
+}
+
+.count-container {
+  margin-left: 1rem;
+  background-color: blue;
+  color: yellow;
+  border-radius: 2px;
+  padding: 0 0.5rem;
+}

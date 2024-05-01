@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--main-color);
+  background-color: var(--main-background);
+}
+
+:root {
+  --main-color: white;
+  --main-background: #2c2c2c;
+  --submit-button-back: rgb(4, 149, 4);
+  --button-color: white;
+  --delete-button-back: red;
+  --ordinary-button-back: #979090;
+  --title-color: orange;
+  --header-height: 3rem;
+  --footer-height: 3rem;
+}
+
+body .hidden {
+  display: none;
+}
+
+.container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.functional-button {
+  background-color: blue;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.app-title,
+.name-block {
+  color: var(--title-color);
+}
+
+.logout-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logout-button {
+  background-color: red;
+}
+
+.logout-error-block {
+  color: red;
+}

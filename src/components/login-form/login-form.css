@@ -1,0 +1,16 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+}
+
+.login-error-block {
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+  margin-bottom: 2rem;
+}

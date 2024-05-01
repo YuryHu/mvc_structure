@@ -1,0 +1,66 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  background-color: #1e90ff;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+}
+
+.message-header,
+.message-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.message-content {
+  padding: 1rem;
+  background-color: var(--main-background);
+  border-radius: 3px;
+}
+
+.message-header span {
+  white-space-collapse: preserve;
+}
+
+.my-message {
+  align-self: end;
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.author {
+  margin-right: 1rem;
+  color: var(--title-color);
+}
+
+.edit-status-container {
+  color: red;
+}
+
+.status-container,
+.edit-status-container {
+  text-transform: capitalize;
+}
+
+.pending {
+  color: #cd7f32;
+}
+
+.delivered {
+  color: green;
+}
+
+.read {
+  color: greenyellow;
+}
+
+.chosen-message {
+  border: 3px solid yellow;
+}

@@ -1,0 +1,9 @@
+.one-field-edit-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.single-input {
+  flex-grow: 1;
+}

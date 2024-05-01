@@ -1,0 +1,3 @@
+cd fun-chat
+npm run ci:format
+npm run lint

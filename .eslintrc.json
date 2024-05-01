@@ -1,0 +1,73 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "import", "@typescript-eslint", "no-comments"],
+  "extends": ["airbnb", "airbnb-typescript", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-debugger": "off",
+    "no-console": 0,
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-explicit-any": 2,
+    "react/jsx-filename-extension": 0,
+    "no-trailing-spaces": 0,
+    "no-comments/disallowComments": ["error", {}],
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "newline-after-var": 1,
+    "import/prefer-default-export": 0,
+    "import/no-cycle": 0,
+    "import/no-useless-path-segments": 0,
+    "no-param-reassign": 0,
+    "no-restricted-imports": [
+      2,
+      {
+        "patterns": ["../../../../*"],
+        "paths": [
+        ".",
+        "..",
+        "./index",
+        "../index",
+        "../../index",
+        "../../../index",
+        "./",
+        "../",
+        "../../",
+        "../../../",
+        "../../../../"
+        ]
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "if",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "if"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "global-require": 0
+  },
+  "settings": {
+    "react": {
+      "version": "9999.9999.9999"
+    }
+  }
+}

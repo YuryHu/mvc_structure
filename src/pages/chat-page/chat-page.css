@@ -1,0 +1,51 @@
+.main {
+  width: 100%;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cotalker-container::before {
+  content: 'Current co-talker:';
+  margin-right: 1rem;
+  color: var(--title-color);
+}
+
+.dialog-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height) - var(--footer-height) - 2rem);
+  gap: 1rem;
+  width: 100%;
+}
+
+.dialog-header,
+.dialog-container,
+.message-form-wrapper {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.dialog-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.active-user {
+  color: greenyellow;
+}
+
+.chat-error-block {
+  color: red;
+  border: 1px solid red;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.initial-dialog-message-container {
+  align-self: center;
+}

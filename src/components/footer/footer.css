@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--footer-height);
+  border-top: 1px solid white;
+  color: var(--title-color);
+  width: 100%;
+}
+
+.rss-logo {
+  background: url('../../assets/img/rss-logo.png') center/cover;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 5px;
+}
